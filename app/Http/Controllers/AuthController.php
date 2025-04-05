@@ -30,7 +30,7 @@ class AuthController extends Controller
                 return redirect()->route('admin.products.index');
             }
 
-            return redirect()->intended('/');
+            return redirect()->route('catalog');
         }
 
         return back()->withErrors([
